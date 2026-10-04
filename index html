@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium iGaming Experience</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- OVERLAY VERIFIKASI USIA (AGE GATE) -->
+    <div id="age-gate" class="age-gate-overlay">
+        <div class="age-gate-box">
+            <h2>🔞 VERIFIKASI USIA</h2>
+            <p>Situs web ini berisi konten taruhan dan hanya ditujukan untuk individu yang berusia di atas 18 tahun (atau usia legal di wilayah Anda).</p>
+            <p>Apakah Anda berusia 18 tahun atau lebih?</p>
+            <div class="age-gate-buttons">
+                <button onclick="confirmAge()" class="btn-verify">Ya, Saya 18+</button>
+                <button onclick="rejectAge()" class="btn-reject">Tidak</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN LANDING PAGE CONTENT -->
+    <header class="hero-section">
+        <div class="container">
+            <div class="badge">🔥 BONUS DEPOSIT 100% UNTUK PEMAIN BARU</div>
+            <h1>Rasakan Sensasi Taruhan Kelas Dunia</h1>
+            <p>Mainkan ratusan game slot, live casino, dan sportsbook berlisensi resmi dengan penarikan dana super cepat.</p>
+            
+            <!-- TOMBOL DIARAHKAN KE GAME ANDA -->
+            <a href="https://yoweswd.cc.cc" class="cta-button">MAIN SEKARANG VIA WEB</a>
+            <a href="https://jebolwd.cc.cc" class="cta-button btn-secondary">UNDUH APLIKASI (Android/iOS)</a>
+        </div>
+    </header>
+
+    <!-- FOOTER KEPATUHAN HUKUM & LISENSI -->
+    <footer class="footer-compliance">
+        <div class="container">
+            <p><strong>Syarat & Ketentuan Berlaku.</strong> Taruhan dapat menyebabkan ketergantungan. Harap bermain secara bertanggung jawab.</p>
+            <p class="license-text">Beroperasi di bawah Lisensi Resmi Otoritas Permainan Berwenang. Hanya untuk wilayah hukum yang dilegalkan.</p>
+            <div class="footer-badges">
+                <span>🔞 18+ Only</span> | <span>🛡️ Secure SSL</span> | <span>🤝 Play Responsibly</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- LOGIKA JAVASCRIPT UNTUK VERIFIKASI USIA -->
+    <script>
+        function confirmAge() {
+            document.getElementById('age-gate').style.display = 'none';
+        }
+        function rejectAge() {
+            alert("Maaf, Anda harus berusia di atas 18 tahun untuk mengakses situs ini.");
+            window.location.href = "https://google.com"; // Lempar pengunjung ke Google jika di bawah umur
+        }
+    </script>
+</body>
+</html>
